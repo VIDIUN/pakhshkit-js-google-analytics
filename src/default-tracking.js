@@ -1,7 +1,7 @@
-import {Error} from 'playkit-js';
+import {Error} from 'pakhshkit-js';
 
 export default {
-  category: 'Kaltura Video Events',
+  category: 'Vidiun Video Events',
   label: function() {
     return `${this.config.partnerId} | ${this.config.uiConfId ? `${this.config.uiConfId} | ` : ''}${this.config.entryId} | '${
       this.config.entryName
@@ -48,7 +48,7 @@ export default {
     },
     ERROR: {
       action: 'error',
-      category: 'Kaltura Video Error',
+      category: 'Vidiun Video Error',
       label: function(error) {
         // eslint-disable-next-line no-unused-vars
         return Object.entries(Error.Code).find(([name, code]) => {

@@ -1,5 +1,5 @@
 // @flow
-import {registerPlugin} from 'playkit-js';
+import {registerPlugin} from 'pakhshkit-js';
 import GoogleAnalytics from './google-analytics';
 
 declare var __VERSION__: string;

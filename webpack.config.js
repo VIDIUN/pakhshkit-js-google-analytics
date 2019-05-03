@@ -29,12 +29,12 @@ if (PROD) {
 module.exports = {
   context: __dirname + '/src',
   entry: {
-    'playkit-google-analytics': 'index.js'
+    'pakhshkit-google-analytics': 'index.js'
   },
   output: {
     path: __dirname + '/dist',
     filename: '[name].js',
-    library: ['KalturaPlayer', 'plugins', 'googleAnalytics'],
+    library: ['VidiunPlayer', 'plugins', 'googleAnalytics'],
     libraryTarget: 'umd',
     devtoolModuleFilenameTemplate: './google-analytics/[resource-path]'
   },
@@ -75,11 +75,11 @@ module.exports = {
     modules: [path.resolve(__dirname, 'src'), 'node_modules']
   },
   externals: {
-    'playkit-js': {
-      commonjs: 'playkit-js',
-      commonjs2: 'playkit-js',
-      amd: 'playkit-js',
-      root: ['KalturaPlayer', 'core']
+    'pakhshkit-js': {
+      commonjs: 'pakhshkit-js',
+      commonjs2: 'pakhshkit-js',
+      amd: 'pakhshkit-js',
+      root: ['VidiunPlayer', 'core']
     }
   }
 };

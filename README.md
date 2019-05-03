@@ -1,13 +1,13 @@
-# PlayKit JS Google Analytics - Google Analytics plugin for the [Kaltura Player JS]
+# PakhshKit JS Google Analytics - Google Analytics plugin for the [Vidiun Player JS]
 
-[![Build Status](https://travis-ci.org/kaltura/playkit-js-google-analytics.svg?branch=master)](https://travis-ci.org/kaltura/playkit-js-google-analytics)
+[![Build Status](https://travis-ci.org/vidiun/pakhshkit-js-google-analytics.svg?branch=master)](https://travis-ci.org/vidiun/pakhshkit-js-google-analytics)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![](https://img.shields.io/npm/v/@playkit-js/playkit-js-google-analytics/latest.svg)](https://www.npmjs.com/package/@playkit-js/playkit-js-google-analytics)
-[![](https://img.shields.io/npm/v/@playkit-js/playkit-js-google-analytics/canary.svg)](https://www.npmjs.com/package/@playkit-js/playkit-js-google-analytics/v/canary)
+[![](https://img.shields.io/npm/v/@pakhshkit-js/pakhshkit-js-google-analytics/latest.svg)](https://www.npmjs.com/package/@pakhshkit-js/pakhshkit-js-google-analytics)
+[![](https://img.shields.io/npm/v/@pakhshkit-js/pakhshkit-js-google-analytics/canary.svg)](https://www.npmjs.com/package/@pakhshkit-js/pakhshkit-js-google-analytics/v/canary)
 
-PlayKit JS Google Analytics plugin integrates google analytics with the [Kaltura Player JS].
+PakhshKit JS Google Analytics plugin integrates google analytics with the [Vidiun Player JS].
 
-PlayKit JS Google Analytics is written in [ECMAScript6], statically analysed using [Flow] and transpiled in ECMAScript5 using [Babel].
+PakhshKit JS Google Analytics is written in [ECMAScript6], statically analysed using [Flow] and transpiled in ECMAScript5 using [Babel].
 
 [flow]: https://flow.org/
 [ecmascript6]: https://github.com/ericdouglas/ES6-Learning#articles--tutorials
@@ -17,9 +17,9 @@ PlayKit JS Google Analytics is written in [ECMAScript6], statically analysed usi
 
 ### Prerequisites
 
-The plugin requires [Kaltura Player JS] to be loaded first.
+The plugin requires [Vidiun Player JS] to be loaded first.
 
-[kaltura player js]: https://github.com/kaltura/kaltura-player-js
+[vidiun player js]: https://github.com/vidiun/vidiun-player-js
 
 ### Installing
 
@@ -28,8 +28,8 @@ First, clone and run [yarn] to install dependencies:
 [yarn]: https://yarnpkg.com/lang/en/
 
 ```
-git clone https://github.com/kaltura/playkit-js-google-analytics.git
-cd playkit-js-google-analytics
+git clone https://github.com/vidiun/pakhshkit-js-google-analytics.git
+cd pakhshkit-js-google-analytics
 yarn install
 ```
 
@@ -46,8 +46,8 @@ yarn run build
 Finally, add the bundle as a script tag in your page, and initialize the player
 
 ```html
-<script type="text/javascript" src="/PATH/TO/FILE/kaltura-{ovp/tv}-player.js"></script>
-<script type="text/javascript" src="/PATH/TO/FILE/playkit-google-analytics.js"></script>
+<script type="text/javascript" src="/PATH/TO/FILE/vidiun-{ovp/tv}-player.js"></script>
+<script type="text/javascript" src="/PATH/TO/FILE/pakhshkit-google-analytics.js"></script>
 <div id="player-placeholder" style="height:360px; width:640px">
 <script type="text/javascript">
 var config = {
@@ -67,7 +67,7 @@ var config = {
   }
  ...
 };
-var player = KalturaPlayer.setup(config);
+var player = VidiunPlayer.setup(config);
 player.loadMedia({
   entryId: '{ENTRY_ID}'
   ...
@@ -115,7 +115,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/kaltura/playkit-js-google-analytics/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/vidiun/pakhshkit-js-google-analytics/tags).
 
 ## License
 

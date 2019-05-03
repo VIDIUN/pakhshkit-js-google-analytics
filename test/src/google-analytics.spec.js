@@ -1,6 +1,6 @@
 import '../../src/index.js';
-import {loadPlayer, FakeEvent, Error} from 'playkit-js';
-import * as TestUtils from 'playkit-js/test/src/utils/test-utils';
+import {loadPlayer, FakeEvent, Error} from 'pakhshkit-js';
+import * as TestUtils from 'pakhshkit-js/test/src/utils/test-utils';
 
 const targetId = 'player-placeholder_google-analytics.spec';
 
@@ -53,7 +53,7 @@ describe('Google Analytics Plugin', function() {
   }
 
   function verifyEventParams(eventData, eventParams = {}) {
-    eventParams.category = eventParams.category || 'Kaltura Video Events';
+    eventParams.category = eventParams.category || 'Vidiun Video Events';
     eventParams.label = eventParams.label || `${partnerId} | ${uiConfId} | ${id} | '${entryName}'`;
     eventData[2]['event_category'].should.equal(eventParams.category);
     if (eventData[2]['event_label']) {
@@ -288,7 +288,7 @@ describe('Google Analytics Plugin', function() {
       player.addEventListener(player.Event.ERROR, () => {
         verifyEventName(dataLayer[dataLayer.length - 1], 'error');
         verifyEventParams(dataLayer[dataLayer.length - 1], {
-          category: 'Kaltura Video Error',
+          category: 'Vidiun Video Error',
           label: 'NO_SOURCE_PROVIDED'
         });
         done();

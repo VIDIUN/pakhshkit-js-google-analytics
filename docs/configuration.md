@@ -87,7 +87,7 @@ The configuration uses the following structure:
 > >
 > > ##### required: `false`
 > >
-> > ##### Description: A map of key-value pairs which key is an event to listen, and value is an object of the parameters to send once the event triggered.<br>The full events can be found [here](https://github.com/kaltura/playkit-js/blob/master/src/event/event-type.js).
+> > ##### Description: A map of key-value pairs which key is an event to listen, and value is an object of the parameters to send once the event triggered.<br>The full events can be found [here](https://github.com/vidiun/pakhshkit-js/blob/master/src/event/event-type.js).
 
 ##
 
